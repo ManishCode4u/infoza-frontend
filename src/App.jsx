@@ -3,25 +3,27 @@ import { Routes, Route } from "react-router-dom";
 
 import Navbar from "./components/common/Navbar";
 import Footer from "./components/common/Footer";
-import BottomNav from "./components/BottomNav.jsx";
+import BottomNav from "./components/BottomNav";
 
-
+// HOME SECTIONS
 import Home from "./pages/Home";
-import AboutBuildora from './pages/AboutBuildora';
+import AboutBuildora from "./pages/AboutBuildora";
 import Services from "./pages/Services";
 import HowItWorks from "./pages/HowItWorks";
 import PaidProjects from "./pages/PaidProjects";
 import PortfolioPage from "./pages/PortfolioPage";
 import FAQ from "./pages/FAQ";
-import Contact from "./pages/Contact";  
+import Contact from "./pages/Contact";
+
+// OTHER PAGES
+import Clients from "./pages/Clients";
 import Blog from "./pages/Blog";
 import BlogDetails from "./pages/BlogDetails";
 
+// LEGAL
 import PrivacyPolicy from "./pages/PrivacyPolicy";
 import TermsOfService from "./pages/TermsOfService";
 import RefundPolicy from "./pages/RefundPolicy";
-import Clients from "./pages/Clients";
-
 
 function App() {
   const [navVariant, setNavVariant] = useState("blue");
@@ -45,9 +47,13 @@ function App() {
 
   return (
     <>
+      {/* NAVBAR */}
       <Navbar variant={navVariant} />
 
+      {/* ROUTES */}
       <Routes>
+
+        {/* HOME (single-page layout) */}
         <Route
           path="/"
           element={
@@ -57,28 +63,37 @@ function App() {
               <Services />
               <HowItWorks />
               <PaidProjects />
-               <PortfolioPage/>
+              <PortfolioPage />
               <FAQ />
               <Contact />
             </>
           }
         />
-        
-        <Route path="/paid-projects" element={<PaidProjects page />} />
-        <Route path="/clients" element={<Clients />} />
-        <Route path="/contact" element={<Contact />} />
-        <Route path="/portfoliopage" element={<PortfolioPage />} />
 
+        {/* INDIVIDUAL PAGES */}
+        <Route path="/about" element={<AboutBuildora />} />
+        <Route path="/services" element={<Services />} />
+        <Route path="/how-it-works" element={<HowItWorks />} />
+        <Route path="/projects" element={<PaidProjects />} />
+        <Route path="/portfolio" element={<PortfolioPage />} />
+        <Route path="/faq" element={<FAQ />} />
+        <Route path="/contact" element={<Contact />} />
+        <Route path="/clients" element={<Clients />} />
+
+        {/* BLOG */}
+        <Route path="/blog" element={<Blog />} />
+        <Route path="/blog/:slug" element={<BlogDetails />} />
+
+        {/* LEGAL */}
         <Route path="/privacy-policy" element={<PrivacyPolicy />} />
         <Route path="/terms" element={<TermsOfService />} />
         <Route path="/refund-policy" element={<RefundPolicy />} />
-        <Route path="/blog" element={<Blog />} />
-        <Route path="/blog/ai-beginners-guide" element={<BlogDetails />} />
+
       </Routes>
 
+      {/* FOOTER & MOBILE NAV */}
       <Footer />
       <BottomNav />
-
     </>
   );
 }
