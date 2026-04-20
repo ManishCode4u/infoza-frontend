@@ -1,16 +1,38 @@
-# React + Vite
+# InfozaTech
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A full-stack project with a React frontend and Node.js backend.
 
-Currently, two official plugins are available:
+## 🚀 How to Run the Project
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+### 1. Backend Setup
+1. Open a terminal and navigate to the backend folder:
+   ```bash
+   cd backend
+   ```
+2. Install dependencies:
+   ```bash
+   npm install
+   ```
+3. Create a `.env` file based on `.env.example` and fill in your credentials.
+4. Start the server:
+   ```bash
+   node server.js
+   ```
+   The backend will run on `http://localhost:5000`.
 
-## React Compiler
+### 2. Frontend Setup
+1. Open a **new** terminal in the root directory.
+2. Install dependencies:
+   ```bash
+   npm install
+   ```
+3. Create a `.env` file based on `.env.example` and set `VITE_API_URL=http://localhost:5000`.
+4. Start the development server:
+   ```bash
+   npm run dev
+   ```
+5. Follow the local URL (usually `http://localhost:5173`) to view the site.
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
-
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## 🌐 Deployment Config
+- **Frontend**: Designed for Netlify (use `VITE_API_URL` for the backend endpoint).
+- **Backend**: Designed for Render (uses `process.env.PORT` and configured CORS).
