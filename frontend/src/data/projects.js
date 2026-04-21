@@ -15,7 +15,7 @@ export const projectsData = [
     logo: "M3 15a4 4 0 004 4h9a5 5 0 10-.1-9.999 5.002 5.002 0 10-9.78 2.096A4.001 4.001 0 003 15z",
     image: projectImage1,
     description: "Building intelligent digital solutions for the future. Partnering with global enterprises to drive scalable impact.",
-    liveLink: "https://infozatech.com/",
+    liveLink: "https://buildoracraft.in/",
     features: [
       "End-to-end intelligent digital transformation and scalable architecture designed for global future-ready enterprises.",
       "Enterprise-grade cloud infrastructure with high-performance API optimization for seamless global partnership impact.",

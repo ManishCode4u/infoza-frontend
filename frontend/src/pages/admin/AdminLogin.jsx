@@ -65,7 +65,7 @@ export default function AdminLogin() {
                   onChange={(e) => setEmail(e.target.value)}
                   disabled={isLoading}
                   className="w-full pl-11 pr-4 py-3 bg-gray-50 dark:bg-zinc-800/50 border border-gray-200 dark:border-zinc-700 rounded-xl outline-none focus:ring-[3px] focus:ring-indigo-500/15 focus:border-indigo-500 transition-all text-gray-900 dark:text-white placeholder-gray-400 text-[15px]"
-                  placeholder="admin@infozatech.com"
+                  placeholder="admin@buildoracraft.in"
                 />
               </div>
             </div>
