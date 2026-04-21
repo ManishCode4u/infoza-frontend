@@ -126,10 +126,10 @@ const AppShowcase = () => {
             <span className="inline-flex items-center gap-2 text-sm font-semibold text-blue-600 bg-blue-100 px-6 py-2 rounded-full mb-6">
               ● Social Media
             </span>
-            <h2 className="text-4xl md:text-5xl font-bold text-[#0f172a] mb-4 tracking-tight">
+            <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-[#0f172a] mb-4 tracking-tight">
               See Our Work on Social Media
             </h2>
-            <p className="text-lg md:text-xl text-[#64748b] max-w-2xl mx-auto font-medium">
+            <p className="text-base md:text-lg lg:text-xl text-[#64748b] max-w-2xl mx-auto font-medium">
               Real content, real results — explore our latest Instagram videos
             </p>
           </div>
@@ -137,7 +137,7 @@ const AppShowcase = () => {
 
         <div className="relative">
           {/* Slider Viewport */}
-          <div className="overflow-visible cursor-grab active:cursor-grabbing" ref={emblaRef}>
+          <div className="overflow-hidden cursor-grab active:cursor-grabbing" ref={emblaRef}>
             <div className="flex -ml-4 md:-ml-8">
               {DEMO_APPS.map((app, index) => {
                 const tweenValue = tweenValues[index] || 0;

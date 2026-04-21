@@ -11,14 +11,13 @@ const Navbar = () => {
   return (
     <header className="fixed top-0 left-0 right-0 z-[9999] pointer-events-none">
       <div
-        className={`fixed top-4 md:top-6 left-1/2 -translate-x-1/2 w-[95%] md:max-w-4xl rounded-full px-8 h-[76px] flex items-center justify-between bg-[#F3F4F4]/90 backdrop-blur-xl border border-gray-100 transition-[box-shadow,background-color] duration-500 hover:shadow-lg pointer-events-auto ${scrolled
+        className={`fixed top-4 md:top-6 left-1/2 -translate-x-1/2 w-[92%] md:w-[95%] md:max-w-4xl rounded-full px-4 md:px-8 h-[64px] md:h-[76px] flex items-center justify-between bg-[#F3F4F4]/90 backdrop-blur-xl border border-gray-100 transition-[box-shadow,background-color] duration-500 hover:shadow-lg pointer-events-auto ${scrolled
             ? "shadow-md"
             : "shadow-sm"
           }`}
       >
-        {/* Logo */}
         <Link to="/" className="flex items-center">
-          <img src={logo} alt="InfozaTech Logo" className="h-[56px] w-auto object-contain" />
+          <img src={logo} alt="InfozaTech Logo" className="h-[40px] md:h-[56px] w-auto object-contain" />
         </Link>
 
         {/* Menu */}

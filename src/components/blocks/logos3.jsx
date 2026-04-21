@@ -62,8 +62,8 @@ const Logos3 = ({
   ],
 }) => {
   return (
-    <div className="w-full flex flex-col items-center mt-24 mb-16 z-20 relative">
-      <div className="flex flex-col md:flex-row items-center justify-center gap-4 mb-12">
+    <div className="w-full flex flex-col items-center mt-12 md:mt-24 mb-12 md:mb-16 z-20 relative">
+      <div className="flex flex-col md:flex-row items-center justify-center gap-4 mb-8 md:mb-12">
         <div className="flex -space-x-3">
           <img className="w-10 h-10 sm:w-12 sm:h-12 rounded-full border-2 border-white shadow-sm object-cover" src="https://i.pravatar.cc/100?img=33" alt="Founder 1" />
           <img className="w-10 h-10 sm:w-12 sm:h-12 rounded-full border-2 border-white shadow-sm object-cover" src="https://i.pravatar.cc/100?img=47" alt="Founder 2" />
@@ -86,7 +86,7 @@ const Logos3 = ({
             {logos.map((logo) => (
               <CarouselItem
                 key={logo.id}
-                className="flex basis-1/3 justify-center pl-0 sm:basis-1/4 md:basis-1/5 lg:basis-1/6 items-center"
+                className="flex basis-1/2 min-[400px]:basis-1/3 justify-center pl-0 sm:basis-1/4 md:basis-1/5 lg:basis-1/6 items-center"
               >
                 <div className="mx-6 flex shrink-0 items-center justify-center">
                   <img

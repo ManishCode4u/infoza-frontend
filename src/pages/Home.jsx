@@ -90,7 +90,7 @@ const Home = () => {
             </div>
 
             {/* Headline */}
-            <h1 className="relative z-20 -mt-2 md:-mt-10 text-4xl md:text-5xl lg:text-7xl font-[600] text-slate-800 tracking-tight leading-[1.1] mb-8 font-sans drop-shadow-md">
+            <h1 className="relative z-20 -mt-2 md:-mt-10 text-[2.4rem] md:text-5xl lg:text-7xl font-[600] text-slate-800 tracking-tight leading-[1.15] mb-8 font-sans drop-shadow-md">
               Build your Startup <br />
               <span className="text-slate-900">with InfozaTech</span>
             </h1>
@@ -175,8 +175,8 @@ const Home = () => {
             <div
               className="flex flex-col items-center justify-center mb-20 text-center"
             >
-              <h3 className="text-5xl md:text-6xl font-[700] text-[#0f172a] tracking-tight mb-6">What We Build</h3>
-              <p className="text-xl md:text-2xl text-[#64748b] font-medium max-w-2xl">Everything you need to launch and scale</p>
+              <h3 className="text-4xl md:text-5xl lg:text-6xl font-[700] text-[#0f172a] tracking-tight mb-6">What We Build</h3>
+              <p className="text-lg md:text-xl md:text-2xl text-[#64748b] font-medium max-w-2xl">Everything you need to launch and scale</p>
             </div>
             </ScrollReveal>
 

@@ -19,15 +19,15 @@ const Projects = ({ page = false }) => {
       {/* 6. Subtle Grid Pattern */}
       <div className="absolute inset-0 bg-[url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI0MCIgaGVpZ2h0PSI0MCI+PGNpcmNsZSBjeD0iMSIgY3k9IjEiIHI9Ii43NSIgZmlsbD0iI2NlZTRlNiIvPjwvc3ZnPg==')] opacity-20 z-0 pointer-events-none"></div>
 
-      {/* 7. Soft abstract shapes (left-top and right-bottom) */}
-      <div className="absolute top-0 left-0 w-[400px] h-[400px] bg-[#60a5fa] rounded-full mix-blend-multiply opacity-20 blur-[60px] pointer-events-none"></div>
-      <div className="absolute bottom-0 right-0 w-[400px] h-[400px] bg-[#a78bfa] rounded-full mix-blend-multiply opacity-20 blur-[60px] pointer-events-none"></div>
+      {/* 7. Soft abstract shapes (hidden on mobile to prevent overflow) */}
+      <div className="absolute top-0 left-0 w-[400px] h-[400px] bg-[#60a5fa] rounded-full mix-blend-multiply opacity-20 blur-[60px] pointer-events-none hidden md:block"></div>
+      <div className="absolute bottom-0 right-0 w-[400px] h-[400px] bg-[#a78bfa] rounded-full mix-blend-multiply opacity-20 blur-[60px] pointer-events-none hidden md:block"></div>
 
       {/* Return Button for Standalone Page */}
       {page && (
         <button
           onClick={() => navigate(-1)}
-          className="fixed top-24 left-6 bg-white text-[#0f172a] w-12 h-12 rounded-full flex items-center justify-center text-xl font-[700] shadow-md hover:shadow-lg hover:-translate-y-1 transition-all duration-300 z-50 border border-[#e2e8f0]"
+          className="fixed top-20 md:top-24 left-4 md:left-6 bg-white text-[#0f172a] w-10 h-10 md:w-12 md:h-12 rounded-full flex items-center justify-center text-xl font-[700] shadow-md hover:shadow-lg hover:-translate-y-1 transition-all duration-300 z-50 border border-[#e2e8f0]"
         >
           ←
         </button>
@@ -55,9 +55,8 @@ const Projects = ({ page = false }) => {
 
           {/* 2. Heading */}
           <h2 
-            className="text-[#0f172a] tracking-tight"
+            className="text-[#0f172a] tracking-tight text-3xl md:text-[38px]"
             style={{
-              fontSize: '38px',
               fontWeight: 600,
               marginTop: '10px',
               marginBottom: '20px'
@@ -138,11 +137,9 @@ const Projects = ({ page = false }) => {
                   🚀 {project.category === "Applications" ? "Our App" : "Our Work"}
                 </div>
 
-                {/* 1. Heading Formatting & 3. Heading Spacing Fix */}
                 <h3 
-                  className="font-[600] text-[#0f172a] leading-[1.1]"
+                  className="font-[600] text-[#0f172a] leading-[1.1] text-2xl md:text-[34px]"
                   style={{ 
-                    fontSize: '34px',
                     letterSpacing: '-0.8px',
                     marginTop: '16px',
                     marginBottom: '18px'
