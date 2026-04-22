@@ -4,6 +4,7 @@ import Navbar from "./components/common/Navbar";
 import Footer from "./components/common/Footer";
 import EmailCapturePopup from "./components/common/EmailCapturePopup";
 import ScrollToTop from "./components/common/ScrollToTop";
+import CookieConsent from "./components/common/CookieConsent";
 
 // ADMIN
 import ProtectedRoute from "./components/admin/ProtectedRoute";
@@ -49,6 +50,7 @@ function App() {
 
       {/* GLOBAL POPUPS */}
       {!isAdminRoute && <EmailCapturePopup />}
+      {!isAdminRoute && <CookieConsent />}
 
       {/* ROUTES */}
       <Routes>

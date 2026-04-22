@@ -344,7 +344,7 @@ const HowItWorks = () => {
           How It Works
         </span>
 
-        <h2 className="text-4xl md:text-5xl lg:text-6xl font-extrabold text-slate-900 leading-[1.1] mb-6 tracking-tight">
+        <h2 className="text-3xl md:text-5xl lg:text-6xl font-extrabold text-slate-900 leading-[1.1] mb-6 tracking-tight">
           Three simple steps to <br className="hidden md:block" />
           <span className="bg-gradient-to-r from-blue-600 to-indigo-600 bg-clip-text text-transparent">
             InfozaTech
@@ -380,7 +380,7 @@ const HowItWorks = () => {
                 </div>
 
                 <div className="flex flex-col text-balance">
-                  <h3 className="text-xl md:text-2xl font-bold text-[#111827] leading-tight mb-3 transition-colors duration-300 group-hover:text-[#2563eb]">
+                  <h3 className="text-lg md:text-xl md:text-2xl font-bold text-[#111827] leading-tight mb-3 transition-colors duration-300 group-hover:text-[#2563eb]">
                     {item.subtitle}
                   </h3>
                   
